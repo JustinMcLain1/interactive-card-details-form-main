@@ -34,7 +34,7 @@
       </div>
 
       <div id="right">
-        <p id="nameOnCard" class="inputheading">Cardholder Name</p>
+        <p id="holdername" class="inputheading">Cardholder Name</p>
         <span id="nameErr">Can't Be Blank</span>
         <input
           type="text"
@@ -48,7 +48,7 @@
         <input
           type="tel"
           id="cardnuminput"
-          pattern="[0-9\s]{13,19}"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]"
           minlength="16"
           maxlength="19"
           class="cardDetailsText"

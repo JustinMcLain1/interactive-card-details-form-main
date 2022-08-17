@@ -118,13 +118,12 @@ input[type="number"]::-webkit-outer-spin-button {
   color: var(--Verydarkviolet);
   font-family: var(--fontfamily);
   font-size: 18px;
-  margin-top: 15px;
   height: 30px;
   width: 125%;
   border: 2px solid var(--Lightviolet);
   border-radius: 5px;
   padding: 6px;
-  margin-bottom: 17px;
+  margin-bottom: 5px;
   text-transform: capitalize;
   cursor: pointer;
 }
@@ -139,10 +138,9 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 #cardexpdate input {
   font-family: var(--fontfamily);
-  width: 46px;
+  width: 80px;
   margin-right: 10px;
   -webkit-appearance: none;
-  -moz-appearance: textfield;
 }
 .inputheading {
   letter-spacing: 1.1px;
@@ -165,9 +163,9 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .cvcinput {
-  margin-left: 40px;
+  margin-left: 10px;
   font-family: var(--fontfamily);
-  width: 75px;
+  width: 120px;
 }
 
 .thankyou {
@@ -290,3 +288,4 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-left: -10rem;
 
 }
+
