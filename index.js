@@ -53,6 +53,7 @@ function main() {
 }
 
 
+
 nameInput.addEventListener("input", removeError);
 cardNumInput.addEventListener("input", removeError);
 MonthInput.addEventListener("input", removeError);
