@@ -28,43 +28,89 @@
       <span class="digits">00/00</span>
     </div>
   </div>
-
-  <div class="card-img-2">
-    <img class="back" src="./images/bg-card-back.png"; />
-    <span class="digitsTwo">000</span>
+  
+  <div class="card-img2">
+    <img class="back" src="./images/bg-card-back.png" alt="" />
+    <span class="digits2"> 000</span>
   </div>
 
   <div id="right">
     <p id="cardHolderName" class="inputHead">Cardholder Name</p>
-    <span id="nameError">Can not be Blank</span>
+    <span id="nameError">Can Not be Blank</span>
     <input
       type="text"
       id="nameInput"
       class="cardDetailsText"
       placeholder="e.g. Jane Appleseed"
       /> 
+      <p id="cardNum" class="inputHead">Card Number</p>
+      <P id="cardNumErr">Only Numbers</P>
+      <p id="cardNumErrBlank">Can Not Be Blank</p>
+      <input
+        type="tel"
+        id="cardNumInput"
+        pattern="[0-9\s]{13,19}"
+        minlength="16"
+        maxlength="19"
+        class="cardDetailsText"
+        placeholder="1234 5678 9123 0000"
+        />
+
+      <p id="cardNum" class="inputHead">
+        Exp. Date (MM/YY) <span class="cvcTitle inputHead">CVC</span>
+      </p>
+
+      <div id="cardInputInfo">
+        <div id="cardExpDate">
+          <input
+          type="tel"
+          id="monthinput"
+          pattern="[1-9]"
+          minlength="1"
+          maxlength="2"
+          class="cardDetailsText monthinput"
+          max="2"
+          placeholder="MM"
+        />
+
+        <input
+          type="tel"
+          id="yearinput"
+          pattern="[0-9]*"
+          minlength="1"
+          maxlength="2"
+          class="cardDetailsText yearinput"
+          placeholder="YY"
+        />
+        </div>
+
+        <span id="mmyyErr">Can Not Be Blank</span>
+
+        <p id="cvc">
+          <input
+          id="cvcInput"
+          type="tel"
+          pattern="[0-9]*"
+          minlength="3"
+          maxlength="3"
+          class="carddetailstext cvcinput"
+          placeholder="e.g. 123"
+        />
+          <span id="cvcErr">Can Not Be Blank</span> 
+        </p>
+      </div>
+      <button class="thankyou" id="btn">Confirm</button>
   </div>
-
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
-
   <!-- Completed state start -->
 
-  Thank you!
-  We've added your card details
-  Continue
+  <img id="check" src="" alt="" />
+
+  <div id="thankyou-card">
+    Thank you!
+    <p id="thankyoumsg">We've added your card details</p>
+
+    <button   class="continuebtn"> Continue</button>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
