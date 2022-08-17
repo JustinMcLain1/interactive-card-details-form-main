@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
-
-
-/* css reset */
 *,
 *::before,
 *::after {
@@ -11,87 +8,285 @@
 }
 
 :root {
-    --h1: #000000;
-    --White: hsl(0, 0%, 100%);
-    --Lightviolet: hsl(270, 3%, 87%);
-    --Darkviolet: hsl(279, 6%, 55%);
-    --Verydarkviolet: hsl(278, 68%, 11%);
-    --fontfamily: "Space Grotesk", sans-serif;
+  --h1: #000000;
+  --White: hsl(0, 0%, 100%);
+  --Lightviolet: hsl(270, 3%, 87%);
+  --Darkviolet: hsl(279, 6%, 55%);
+  --Verydarkviolet: hsl(278, 68%, 11%);
+  --fontfamily: "Space Grotesk", sans-serif;
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+  overflow-y: hidden;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
 }
 
 #mainBackground {
-    background-image: url("../images/bg-main-desktop.png");
-    height: 100%;
-    width: 100%;
-    display: inline-block;
-    position: absolute;
-    background-repeat: no-repeat;
-    z-index: calc(-1);
+  background-image: url(./images/bg-main-desktop.png);
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  background-repeat: no-repeat;
+  z-index: calc(-1);
 }
 
 .container {
-    display: flex;
+  display: flex;
 }
 
 .front {
-    position: absolute;
-    margin-left: 120px;
-    margin-top: 130px;
-    z-index: 3;
-  }
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 130px;
+  z-index: 3;
+  filter: drop-shadow(0 0 0.75rem black);
+}
 
-  .back {
-    margin-top: 65%;
-    margin-left: 200px;
-  }
+.back {
+  margin-top: 65%;
+  margin-left: 200px;
+  filter: drop-shadow(0 0 0.75rem black);;
+}
 
-  .circle {
-    z-index: 4;
-    position: absolute;
-    margin-top: 160px;
-    margin-left: 150px;
-  }
+.circle {
+  z-index: 4;
+  position: absolute;
+  margin-top: 160px;
+  margin-left: 130px;
+}
 
-  .number {
-    z-index: 5;
-    position: absolute;
-    margin-top: 280px;
-    margin-left: 160px;
-    font-size: 25px;
-    color: white;
-    font-family: var(--fontFamily);
-    letter-spacing: 5px;
-  }
+.number {
+  margin-left: 140px;
+  font-size: 25px;
+  color: var(--White);
+  position: absolute;
+  margin-top: 250px;
+  font-family: var(--fontfamily);
+  letter-spacing: 5px;
+  z-index: 5;
+}
 
-  .nameOnCard {
-    z-index: 5;
-    margin-left: 160px;
-    position: absolute;
-    color: var(--White);
-    margin-top: 330px;
-    font-family: var(--fontFamily);
-    letter-spacing: 1px;
-  }
+.nameOnCard {
+  z-index: 5;
+  margin-left: 140px;
+  font-size: 17px;
+  color: var(--White);
+  position: absolute;
+  margin-top: 330px;
+  font-family: var(--fontfamily);
+  letter-spacing: 1px;
+}
 
-  .digits {
-    font-size: 17px;
-    z-index: 5;
-    position: absolute;
-    margin-top: 330px;
-    color: white;
-    margin-left: 32rem;
-    font-family: var(--fontFamily);
-    letter-spacing: 1px;
-  }
+.digits {
+  z-index: 5;
+  margin-left: 29.3rem;
+  font-size: 15px;
+  color: var(--White);
+  position: absolute;
+  margin-top: 330px;
+  font-family: var(--fontfamily);
+  letter-spacing: 1px;
+}
 
-  .digitsTwo {
-    z-index: 5;
-    margin-left: -6.4rem;
-    font-size: 16px;
-    color: var(--White);
-    position: absolute;
-    margin-top: 35.5rem;
-    font-family: "Space Grotesk", sans-serif;
-    letter-spacing: 1px;
-  }
+.digits2 {
+  z-index: 5;
+  margin-left: -5.4rem;
+  font-size: 16px;
+  color: var(--White);
+  position: absolute;
+  margin-top: 33.2rem;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 1px;
+}
 
+#right {
+  margin-left: 11rem;
+  margin-top: 14rem;
+}
+
+.cardDetailsText {
+  justify-content: center;
+  color: var(--Verydarkviolet);
+  font-family: var(--fontfamily);
+  font-size: 18px;
+  margin-top: 15px;
+  height: 30px;
+  width: 125%;
+  border: 2px solid var(--Lightviolet);
+  border-radius: 5px;
+  padding: 6px;
+  margin-bottom: 17px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+#cardInputDetail {
+  display: flex;
+  font-family: var(--fontfamily);
+}
+#cardexpdate {
+  display: flex;
+  font-family: var(--fontfamily);
+}
+#cardexpdate input {
+  font-family: var(--fontfamily);
+  width: 46px;
+  margin-right: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+.inputheading {
+  letter-spacing: 1.1px;
+  color: var(--Verydarkviolet);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 15px;
+  margin-top: 5px;
+  height: 36px;
+
+  text-transform: uppercase;
+}
+
+#cardDetailsInput {
+  display: flex;
+  flex-direction: row;
+}
+.cvcTitle {
+  margin-left: 29px;
+  font-family: var(--fontfamily);
+}
+
+.cvcinput {
+  margin-left: 40px;
+  font-family: var(--fontfamily);
+  width: 75px;
+}
+
+.thankyou {
+  color: white;
+  background-color: var(--Verydarkviolet);
+  justify-content: center;
+  font-family: var(--fontfamily);
+  width: 125%;
+  border-radius: 5px;
+  height: 35px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: none;
+  margin-top: 15px;
+
+}
+
+.thankyou:hover {
+  background-color: var(--Darkviolet);
+  color: var(--Verydarkviolet);
+}
+.continuebtn {
+  display: flex;
+  padding: 10px;
+  width: 106%;
+  height: 50px;
+  margin-top: 10.3%;
+  border: none;
+  border-radius: 6px;
+  color: var(--White);
+  background-color: var(--Verydarkviolet);
+  font-family: var(--fontfamily);
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: 0%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+.continuebtn:hover {
+  background-color: var(--Darkviolet);
+  color: var(--Verydarkviolet);
+}
+
+#btn:hover {
+  background-color: var(--Darkviolet);
+  color: var(--Verydarkviolet);
+}
+
+#nameErr,
+#cardNumErr,
+#cardNumBlankErr {
+  position: absolute;
+  color: red;
+  font-family: var(--fontfamily);
+  margin-left: 16%;
+  margin-top: 43px;
+  display: none;
+}
+#mmyyErr {
+  position: absolute;
+  color: red;
+  font-family: var(--fontfamily);
+  margin-left: 0%;
+  margin-top: 46px;
+  font-size: 12px;
+  display: none;
+}
+#cvcerror {
+  position: absolute;
+  color: red;
+  font-family: var(--fontfamily);
+  margin-left: 10%;
+  margin-top: -10px;
+  display: none;
+  font-size: 12px;
+}
+
+#check {
+  width: 85px;
+  height: 85px;
+  margin-left: 67rem;
+  margin-top: 16%;
+  display: none;
+  position: absolute;
+}
+#thankyou-card {
+  display: flex;
+  font-family: var(--fontfamily);
+  color: var(--Verydarkviolet);
+  flex-direction: column;
+  font-size: 30px;
+  margin-top: 23.5%;
+  text-align: center;
+  margin-left: 60rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  display: none;
+  position: absolute;
+}
+#thankyoumsg {
+  font-family: var(--Darkviolet);
+  color: var(--Darkviolet);
+  font-size: 16px;
+  margin-top: 30px;
+  text-transform: none;
+  font-weight: initial;
+}
+
+
+.attribution{
+  font-size: 11px;
+  text-align: center;
+  margin-top: 50rem;
+  font-family: var(--fontfamily);
+  margin-left: -10rem;
+
+}

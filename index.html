@@ -1,120 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive card details form</title>
-  <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Interactive card details form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div id="mainBackground"></div>
 
-  <div id="mainBackground"></div>
-  
-  <div class="containerMain">
-    <div class="cardImage">
-      <img class="circle" src="./images/card-logo.svg" alt="card logo" />
-      <img class="front"  src="./images/bg-card-front.png" alt="front card" />
-      <h2 class="number">  0000 0000 0000 0000 </h2>
-      <p class="nameOnCard"> Jane Appleseed</p>
-      <span class="digits">00/00</span>
-    </div>
-  </div>
-  
-  <div class="card-img2">
-    <img class="back" src="./images/bg-card-back.png" alt="" />
-    <span class="digits2"> 000</span>
-  </div>
+    <div class="container">
+      <div class="card-img" ?\>
+        <img class="circle" src="./images/card-logo.svg" alt="" />
+        <img class="front" src="./images/bg-card-front.png" alt="" />
+        <h2 class="number">0000 0000 0000 0000</h2>
+        <p class="nameOnCard">Jane Appleseed</p>
+        <span class="digits">00/00</span>
+      </div>
 
-  <div id="right">
-    <p id="cardHolderName" class="inputHead">Cardholder Name</p>
-    <span id="nameError">Can Not be Blank</span>
-    <input
-      type="text"
-      id="nameInput"
-      class="cardDetailsText"
-      placeholder="e.g. Jane Appleseed"
-      /> 
-      <p id="cardNum" class="inputHead">Card Number</p>
-      <P id="cardNumErr">Only Numbers</P>
-      <p id="cardNumErrBlank">Can Not Be Blank</p>
-      <input
-        type="tel"
-        id="cardNumInput"
-        pattern="[0-9\s]{13,19}"
-        minlength="16"
-        maxlength="19"
-        class="cardDetailsText"
-        placeholder="1234 5678 9123 0000"
+      <div class="card-img2">
+        <img class="back" src="./images/bg-card-back.png" alt="" />
+        <span class="digits2">000</span>
+      </div>
+
+      <div id="right">
+        <p id="nameOnCard" class="inputheading">Cardholder Name</p>
+        <span id="nameErr">Can't Be Blank</span>
+        <input
+          type="text"
+          id="nameinput"
+          class="cardDetailsText"
+          placeholder=" e.g. Jane Appleseed"
         />
-
-      <p id="cardNum" class="inputHead">
-        Exp. Date (MM/YY) <span class="cvcTitle inputHead">CVC</span>
-      </p>
-
-      <div id="cardInputInfo">
-        <div id="cardExpDate">
-          <input
-          type="tel"
-          id="monthinput"
-          pattern="[1-9]"
-          minlength="1"
-          maxlength="2"
-          class="cardDetailsText monthinput"
-          max="2"
-          placeholder="MM"
-        />
-
+        <p id="cardNum" class="inputheading">Card Number</p>
+        <span id="cardNumErr">Wrong Format, Numbers Only</span>
+        <span id="cardNumBlankErr">Can't Be Blank</span>
         <input
           type="tel"
-          id="yearinput"
-          pattern="[0-9]*"
-          minlength="1"
-          maxlength="2"
-          class="cardDetailsText yearinput"
-          placeholder="YY"
+          id="cardnuminput"
+          pattern="[0-9\s]{13,19}"
+          minlength="16"
+          maxlength="19"
+          class="cardDetailsText"
+          placeholder="1234 5678 9123 0000"
         />
-        </div>
-
-        <span id="mmyyErr">Can Not Be Blank</span>
-
-        <p id="cvc">
-          <input
-          id="cvcInput"
-          type="tel"
-          pattern="[0-9]*"
-          minlength="3"
-          maxlength="3"
-          class="carddetailstext cvcinput"
-          placeholder="e.g. 123"
-        />
-          <span id="cvcErr">Can Not Be Blank</span> 
+        <p id="cardNum" class="inputheading">
+          Exp. Date (MM/YY) <span class="cvcTitle inputheading">CVC</span>
         </p>
+
+        <div id="cardInputDetails">
+          <div id="cardexpdate">
+            <input
+              type="tel"
+              id="monthinput"
+              pattern="[1-9]"
+              minlength="1"
+              maxlength="2"
+              class="cardDetailsText monthinput"
+              max="2"
+              placeholder="MM"
+            />
+            <input
+              type="tel"
+              id="yearinput"
+              pattern="[0-9]*"
+              minlength="1"
+              maxlength="2"
+              class="cardDetailsText yearinput"
+              placeholder="YY"
+            />
+            <span id="mmyyErr">Can't Be Blank</span>
+
+            <p id="cvc">
+              <input
+                id="cvcinput"
+                type="tel"
+                pattern="[0-9]*"
+                minlength="3"
+                maxlength="3"
+                class="cardDetailsText cvcinput"
+                placeholder="e.g. 123"
+              /><span id="cvcerror">Can't Be Blank</span>
+            </p>
+          </div>
+        </div>
+        <button class="thankyou" id="btn">Confirm</button>
       </div>
-      <button class="thankyou" id="btn">Confirm</button>
-  </div>
-  <!-- Completed state start -->
 
-  <img id="check" src="" alt="" />
+      <img id="check" src="" alt="" />
 
-  <div id="thankyou-card">
-    Thank you!
-    <p id="thankyoumsg">We've added your card details</p>
+      <div id="thankyou-card">
+        Thank you!
+        <p id="thankyoumsg">We've added your card details</p>
 
-    <button   class="continuebtn"> Continue</button>
-  </div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Justin McLain</a>.
-  </div>
-</body>
+        <button class="continuebtn">Continue</button>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">@JustinMcLain</a>.
+      </div>
+    </div>
+  </body>
+
+  <script src="index.js"></script>
 </html>
