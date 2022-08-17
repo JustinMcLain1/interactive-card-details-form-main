@@ -289,3 +289,122 @@ input[type="number"]::-webkit-outer-spin-button {
 
 }
 
+@media (max-width: 600px) {
+
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+        height: 100vh;
+    }
+
+    #mainBackground{
+        height: 100vh;
+        width: 100%;
+        display: block;
+        background-repeat: repeat-x;
+        background-image: url(./images/bg-main-mobile.png);
+    }
+
+    .front {
+        width: 305px;
+        margin-left: 1.5rem;
+    }
+
+    .back{
+        width: 305px;
+        margin-left: 5rem;
+        margin-top: 2rem;
+    }
+
+    .circle{
+        margin-left: 2rem;
+        margin-top: 9rem;
+    }
+    
+    
+    .nameOnCard {
+        font-size: 13px;
+        margin-top: 16.5rem;
+        margin-left: 2.5rem;
+    }
+
+    .number {
+        margin-left: 2.5rem;
+        font-size: 15px;
+        margin-top: 14.5rem;
+    }
+
+    .digits {
+        margin-left: 16.5rem;
+        margin-top: 16.5rem;
+        font-size: 12px; 
+    }
+
+    .digits2 {
+        z-index: 5;
+        margin-right: 5px;
+        margin-left: -3.9rem;
+        font-size: 12px;
+        margin-top: 6.65rem;
+    }
+
+    #right {
+        margin-left: -22rem;
+        margin-top: 75%;
+    }
+
+    .attribution {
+        font-size: 12px;
+        margin-top: 206%;
+        margin-left: -62%;
+    }
+    .attribution a {
+        text-decoration-line: none;
+        color: var(--Verydarkviolet);
+    }
+
+    #nameerror,
+    #cardnumerror,
+    #cardnumblankerror {
+      margin-left: 52%;
+    }
+    .inputheading {
+      margin-top: 9px;
+      height: 36px;
+    }
+  
+    #thankyou-card {
+      margin-top: 129.5%;
+  
+      margin-left: 30px;
+      display: none;
+    }
+  
+    #check {
+      margin-left: 38%;
+      margin-top: 92%;
+      display: none;
+    }
+  
+    #btn {
+      position: absolute;
+      width: 80%;
+      margin-top: 5%;
+    }
+    #nameerror,
+    #cardnumerror,
+    #cardnumblankerror {
+      margin-left: 52%;
+    }
+    .inputheading {
+      margin-top: 9px;
+      height: 36px;
+    }
+  
+    .continuebtn {
+      margin-left: -14px;
+    }
+  }
+
+}
+
