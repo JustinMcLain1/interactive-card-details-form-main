@@ -42,7 +42,7 @@
           class="cardDetailsText"
           placeholder=" e.g. Jane Appleseed"
         />
-        <p id="cardNum" class="inputheading">Card Number</p>
+        <p id="cardNumberVal" class="inputheading">Card Number</p>
         <span id="cardNumErr">Wrong Format, Numbers Only</span>
         <span id="cardNumBlankErr">Can't Be Blank</span>
         <input
@@ -54,7 +54,7 @@
           class="cardDetailsText"
           placeholder="1234 5678 9123 0000"
         />
-        <p id="cardNum" class="inputheading">
+        <p id="cardNumDate" class="inputheading">
           Exp. Date (MM/YY) <span class="cvcTitle inputheading">CVC</span>
         </p>
 
@@ -64,17 +64,17 @@
               type="tel"
               id="monthinput"
               pattern="[1-9]"
-              minlength="1"
-              maxlength="2"
+              length="2"
               class="cardDetailsText monthinput"
-              max="2"
+              minlength="2"
+              maxlength="2"
               placeholder="MM"
             />
             <input
               type="tel"
               id="yearinput"
               pattern="[0-9]*"
-              minlength="1"
+              minlength="2"
               maxlength="2"
               class="cardDetailsText yearinput"
               placeholder="YY"
@@ -94,10 +94,10 @@
             </p>
           </div>
         </div>
-        <button class="thankyou" id="btn">Confirm</button>
+        <button class="thankyou" id="btn" >Confirm</button>
       </div>
 
-      <img id="check" src="" alt="" />
+      <img id="check" src="./images/icon-complete.svg" alt="" />
 
       <div id="thankyou-card">
         Thank you!

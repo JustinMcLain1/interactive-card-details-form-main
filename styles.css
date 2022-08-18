@@ -147,7 +147,8 @@ input[type="number"]::-webkit-outer-spin-button {
   color: var(--Verydarkviolet);
   font-family: "Space Grotesk", sans-serif;
   font-size: 15px;
-  margin-top: 5px;
+  margin-top: 50px;
+  margin-bottom: -12px;
   height: 36px;
 
   text-transform: uppercase;
@@ -174,13 +175,13 @@ input[type="number"]::-webkit-outer-spin-button {
   justify-content: center;
   font-family: var(--fontfamily);
   width: 125%;
-  border-radius: 5px;
-  height: 35px;
+  border-radius: 10px;
+  height: 50px;
   font-size: 18px;
   cursor: pointer;
   transition: 0.3s ease;
   border: none;
-  margin-top: 15px;
+  margin-top: 45px;
 
 }
 
@@ -191,18 +192,18 @@ input[type="number"]::-webkit-outer-spin-button {
 .continuebtn {
   display: flex;
   padding: 10px;
-  width: 106%;
-  height: 50px;
-  margin-top: 10.3%;
+  width: 125%;
+  height: 55px;
+  margin-top: 50px;
   border: none;
-  border-radius: 6px;
+  border-radius: 10px;
   color: var(--White);
   background-color: var(--Verydarkviolet);
   font-family: var(--fontfamily);
   font-size: 18px;
   cursor: pointer;
   transition: 0.3s ease;
-  margin-left: 0%;
+  margin-left: -13%;
   position: absolute;
   justify-content: center;
   align-items: center;
@@ -218,13 +219,15 @@ input[type="number"]::-webkit-outer-spin-button {
   color: var(--Verydarkviolet);
 }
 
+
 #nameErr,
 #cardNumErr,
 #cardNumBlankErr {
   position: absolute;
   color: red;
   font-family: var(--fontfamily);
-  margin-left: 16%;
+  font-size: 12px;
+  margin-bottom: 1rem;
   margin-top: 43px;
   display: none;
 }
@@ -233,16 +236,17 @@ input[type="number"]::-webkit-outer-spin-button {
   color: red;
   font-family: var(--fontfamily);
   margin-left: 0%;
-  margin-top: 46px;
+  margin-top: 32px;
   font-size: 12px;
   display: none;
 }
+
 #cvcerror {
   position: absolute;
   color: red;
   font-family: var(--fontfamily);
-  margin-left: 10%;
-  margin-top: -10px;
+  margin-left: 12px;
+  margin-top: -5px;
   display: none;
   font-size: 12px;
 }
@@ -285,7 +289,7 @@ input[type="number"]::-webkit-outer-spin-button {
   text-align: center;
   margin-top: 50rem;
   font-family: var(--fontfamily);
-  margin-left: -10rem;
+  margin-left: 19rem;
 
 }
 
@@ -350,33 +354,22 @@ input[type="number"]::-webkit-outer-spin-button {
 
     #right {
         margin-left: -22rem;
-        margin-top: 75%;
+        margin-top: 60%;
     }
 
     .attribution {
         font-size: 12px;
         margin-top: 206%;
-        margin-left: -62%;
+        margin-left: -70%;
     }
     .attribution a {
         text-decoration-line: none;
         color: var(--Verydarkviolet);
     }
-
-    #nameerror,
-    #cardnumerror,
-    #cardnumblankerror {
-      margin-left: 52%;
-    }
-    .inputheading {
-      margin-top: 9px;
-      height: 36px;
-    }
   
     #thankyou-card {
-      margin-top: 129.5%;
-  
-      margin-left: 30px;
+      margin-top: 115.5%;
+      margin-left: 80px;
       display: none;
     }
   
@@ -387,22 +380,38 @@ input[type="number"]::-webkit-outer-spin-button {
     }
   
     #btn {
+      border-radius: 10px;
+      height: 55px;
       position: absolute;
-      width: 80%;
-      margin-top: 5%;
+      width: 77%;
+      margin-top: 9%;
     }
-    #nameerror,
-    #cardnumerror,
-    #cardnumblankerror {
-      margin-left: 52%;
+
+    .inputheading{
+        margin-top: 4rem;
+        height: 36px;
+        font-size: 16px;
+        padding-top: 1px;
+        
+      }
+
+    #cardNumberVal {
+        margin-top: 25px;
     }
-    .inputheading {
-      margin-top: 9px;
-      height: 36px;
+
+    #cardNumDate {
+        margin-top: 25px;
+    }
+    
+    #nameErr,
+    #cardNumErr,
+    #cardNumBlankErr {
+      margin-left: 0%;
+      margin-top: 2rem;
     }
   
     .continuebtn {
-      margin-left: -14px;
+      margin-left: -39px;
     }
 }
 
