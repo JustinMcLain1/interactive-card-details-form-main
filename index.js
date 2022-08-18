@@ -21,6 +21,7 @@ const cvcError = document.getElementById("cvcerror");
 button.addEventListener("click", main);
 
 function main() {
+
   if (nameInput.value == "") {
     nameError.style.display = "block";
     nameInput.style.borderColor = "red";
@@ -46,8 +47,6 @@ function main() {
     cvcInput.style.borderColor = "red";
   } else {
     right.style.display = "none";
-
-
     
     check.src = "./images/icon-complete.svg";
     check.style.display = "block";
