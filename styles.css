@@ -228,7 +228,7 @@ input[type="number"]::-webkit-outer-spin-button {
   font-family: var(--fontfamily);
   font-size: 12px;
   margin-bottom: 1rem;
-  margin-top: 43px;
+  margin-top: 38px;
   display: none;
 }
 #mmyyErr {
@@ -289,7 +289,7 @@ input[type="number"]::-webkit-outer-spin-button {
   text-align: center;
   margin-top: 50rem;
   font-family: var(--fontfamily);
-  margin-left: 19rem;
+  margin-left: -16.5rem;
 
 }
 
